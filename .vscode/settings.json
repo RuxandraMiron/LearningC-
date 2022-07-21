@@ -1,0 +1,5 @@
+{ 
+    "dotnet-test-explorer.testProjectPath": "**/*.*Tests",
+    "dotnet-test-explorer.runInParallel": true,
+    "coverage-gutters.showLineCoverage": true,
+}

@@ -1,0 +1,177 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi.IntegrationTests/ContosoPizza.WebApi.IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi.IntegrationTests/ContosoPizza.WebApi.IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi.IntegrationTests/ContosoPizza.WebApi.IntegrationTests.csproj",
+        "projectName": "ContosoPizza.WebApi.IntegrationTests",
+        "projectPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi.IntegrationTests/ContosoPizza.WebApi.IntegrationTests.csproj",
+        "packagesPath": "/home/ruxandra/.nuget/packages/",
+        "outputPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi.IntegrationTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ruxandra/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj": {
+                "projectPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj",
+        "projectName": "ContosoPizza.WebApi",
+        "projectPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj",
+        "packagesPath": "/home/ruxandra/.nuget/packages/",
+        "outputPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ruxandra/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Validation": {
+              "target": "Package",
+              "version": "[17.0.53, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "Validation": {
+              "target": "Package",
+              "version": "[2.5.51, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

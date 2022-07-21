@@ -1,0 +1,151 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/IntegrationTest/IntegrationTest.csproj": {}
+  },
+  "projects": {
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.csproj",
+        "projectName": "ContosoPizza",
+        "projectPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.csproj",
+        "packagesPath": "/home/ruxandra/.nuget/packages/",
+        "outputPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ruxandra/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.VisualStudio.UnitTesting": {
+              "target": "Package",
+              "version": "[11.0.50727.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/IntegrationTest/IntegrationTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/IntegrationTest/IntegrationTest.csproj",
+        "projectName": "IntegrationTest",
+        "projectPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/IntegrationTest/IntegrationTest.csproj",
+        "packagesPath": "/home/ruxandra/.nuget/packages/",
+        "outputPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/IntegrationTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ruxandra/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.csproj": {
+                "projectPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

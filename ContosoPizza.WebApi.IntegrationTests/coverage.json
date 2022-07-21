@@ -1,0 +1,407 @@
+{
+  "ContosoPizza.WebApi.dll": {
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/WeatherForecast.cs": {
+      "ContosoPizza.WeatherForecast": {
+        "System.DateTime ContosoPizza.WeatherForecast::get_Date()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 ContosoPizza.WeatherForecast::get_TemperatureC()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 ContosoPizza.WeatherForecast::get_TemperatureF()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String ContosoPizza.WeatherForecast::get_Summary()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/Program.cs": {
+      "ContosoPizza.WebApi.Program": {
+        "System.Void ContosoPizza.WebApi.Program::Main(System.String[])": {
+          "Lines": {
+            "29": 2,
+            "30": 2,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder ContosoPizza.WebApi.Program::CreateWebHostBuilder(System.String[])": {
+          "Lines": {
+            "34": 2,
+            "35": 2,
+            "36": 2,
+            "37": 2,
+            "38": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/Startup.cs": {
+      "ContosoPizza.WebApi.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration ContosoPizza.WebApi.Startup::get_Configuration()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void ContosoPizza.WebApi.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "14": 2,
+            "15": 2,
+            "16": 2,
+            "17": 2
+          },
+          "Branches": []
+        },
+        "System.Void ContosoPizza.WebApi.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "20": 2,
+            "21": 2,
+            "22": 2,
+            "23": 2,
+            "24": 2,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 2,
+            "31": 2,
+            "33": 2,
+            "35": 4,
+            "36": 2,
+            "37": 3,
+            "38": 4,
+            "40": 2
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 21,
+              "Offset": 9,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void ContosoPizza.WebApi.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "6": 2,
+            "7": 2,
+            "8": 2,
+            "9": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/Services/PizzaService.cs": {
+      "ContosoPizza.WebApi.Services.PizzaService": {
+        "System.Collections.Generic.List`1<ContosoPizza.WebApi.Models.Pizza> ContosoPizza.WebApi.Services.PizzaService::get_Pizzas()": {
+          "Lines": {
+            "7": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<ContosoPizza.WebApi.Models.Pizza> ContosoPizza.WebApi.Services.PizzaService::GetAll()": {
+          "Lines": {
+            "17": 1
+          },
+          "Branches": []
+        },
+        "ContosoPizza.WebApi.Models.Pizza ContosoPizza.WebApi.Services.PizzaService::Get(System.Int32)": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void ContosoPizza.WebApi.Services.PizzaService::Add(ContosoPizza.WebApi.Models.Pizza)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Void ContosoPizza.WebApi.Services.PizzaService::Delete(System.Int32)": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": [
+            {
+              "Line": 28,
+              "Offset": 14,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 14,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void ContosoPizza.WebApi.Services.PizzaService::Update(ContosoPizza.WebApi.Models.Pizza)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 43,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 43,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void ContosoPizza.WebApi.Services.PizzaService::.cctor()": {
+          "Lines": {
+            "8": 1,
+            "9": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/Models/Pizza.cs": {
+      "ContosoPizza.WebApi.Models.Pizza": {
+        "System.Int32 ContosoPizza.WebApi.Models.Pizza::get_Id()": {
+          "Lines": {
+            "4": 8
+          },
+          "Branches": []
+        },
+        "System.String ContosoPizza.WebApi.Models.Pizza::get_Name()": {
+          "Lines": {
+            "5": 8
+          },
+          "Branches": []
+        },
+        "System.Boolean ContosoPizza.WebApi.Models.Pizza::get_IsGlutenFree()": {
+          "Lines": {
+            "7": 8
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/Controllers/PizzaCotroller.cs": {
+      "ContosoPizza.WebApi.Controllers.PizzaController": {
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<System.Collections.Generic.List`1<ContosoPizza.WebApi.Models.Pizza>> ContosoPizza.WebApi.Controllers.PizzaController::GetAll()": {
+          "Lines": {
+            "16": 1
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<ContosoPizza.WebApi.Models.Pizza> ContosoPizza.WebApi.Controllers.PizzaController::Get(System.Int32)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult ContosoPizza.WebApi.Controllers.PizzaController::Create(ContosoPizza.WebApi.Models.Pizza)": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult ContosoPizza.WebApi.Controllers.PizzaController::Update(System.Int32,ContosoPizza.WebApi.Models.Pizza)": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 15,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 39,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 39,
+              "EndOffset": 50,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult ContosoPizza.WebApi.Controllers.PizzaController::Delete(System.Int32)": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "58": 0,
+            "60": 0,
+            "61": 0
+          },
+          "Branches": [
+            {
+              "Line": 55,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 14,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void ContosoPizza.WebApi.Controllers.PizzaController::.ctor()": {
+          "Lines": {
+            "11": 2,
+            "13": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/Controllers/WeatherForecastController.cs": {
+      "ContosoPizza.WebApi.Controllers.WeatherForecastController": {
+        "System.Collections.Generic.IEnumerable`1<ContosoPizza.WeatherForecast> ContosoPizza.WebApi.Controllers.WeatherForecastController::Get()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        },
+        "System.Void ContosoPizza.WebApi.Controllers.WeatherForecastController::.ctor(Microsoft.Extensions.Logging.ILogger`1<ContosoPizza.WebApi.Controllers.WeatherForecastController>)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void ContosoPizza.WebApi.Controllers.WeatherForecastController::.cctor()": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
