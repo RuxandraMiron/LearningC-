@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContosoPizza.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:ContosoPizza.WebApi.Controllers.PizzaController.GetAll">
+            <summary>
+            Returns all pizzas.
+            </summary>
+        </member>
+        <member name="M:ContosoPizza.WebApi.Controllers.PizzaController.Get(System.Int32)">
+            <summary>
+            Returns a specific pizza.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ContosoPizza.WebApi.Controllers.PizzaController.GetByQuery(ContosoPizza.WebApi.DTOs.PizzaGetDto)">
+            <summary>
+            Returns pizzas depending on which pqery parameters you provide.
+            </summary>
+            <param name="pizzaGetDto"></param>
+        </member>
+        <member name="M:ContosoPizza.WebApi.Controllers.PizzaController.Create(ContosoPizza.WebApi.DTOs.PizzaCreateDto)">
+             <summary>
+             Creates a pizza.
+             </summary>
+            <remarks>
+             Sample request:
+            
+                 POST /Pizza
+                 {
+                    "name": "Capriciosa",
+                    "size" : 2,
+                    "price" : 10
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:ContosoPizza.WebApi.Controllers.PizzaController.Update(System.Int32,ContosoPizza.WebApi.DTOs.PizzaUpdateDto)">
+            <summary>
+            Updates some fields in a specific pizza.
+            </summary>
+            <param name="Id"></param>
+            <param name="pizzaUpdateDto"></param>
+            <response code="404">If the id is null</response>
+        </member>
+        <member name="M:ContosoPizza.WebApi.Controllers.PizzaController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific pizza.
+            </summary>
+            <param name="id"></param>
+            <response code="404">If the id is null</response>
+        </member>
+    </members>
+</doc>

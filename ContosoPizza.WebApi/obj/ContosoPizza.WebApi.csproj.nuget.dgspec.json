@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj": {}
+    "C:\\Users\\rmirononciul\\OneDrive - Riverbed\\Desktop\\Work\\ContosoPizza\\ContosoPizza.WebApi\\ContosoPizza.WebApi.csproj": {}
   },
   "projects": {
-    "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj": {
+    "C:\\Users\\rmirononciul\\OneDrive - Riverbed\\Desktop\\Work\\ContosoPizza\\ContosoPizza.WebApi\\ContosoPizza.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\rmirononciul\\OneDrive - Riverbed\\Desktop\\Work\\ContosoPizza\\ContosoPizza.WebApi\\ContosoPizza.WebApi.csproj",
         "projectName": "ContosoPizza.WebApi",
-        "projectPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/ContosoPizza.WebApi.csproj",
-        "packagesPath": "/home/ruxandra/.nuget/packages/",
-        "outputPath": "/home/ruxandra/work/MicrosoftDotNet/ContosoPizza/ContosoPizza.WebApi/obj/",
+        "projectPath": "C:\\Users\\rmirononciul\\OneDrive - Riverbed\\Desktop\\Work\\ContosoPizza\\ContosoPizza.WebApi\\ContosoPizza.WebApi.csproj",
+        "packagesPath": "C:\\Users\\rmirononciul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rmirononciul\\OneDrive - Riverbed\\Desktop\\Work\\ContosoPizza\\ContosoPizza.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ruxandra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rmirononciul\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -64,7 +64,11 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.ReDoc": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             },
             "Validation": {
               "target": "Package",
@@ -89,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,7 +1,6 @@
 namespace ContosoPizza.WebApi.Models;
 
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc.DataAnnotations;
 public class Pizza{ 
     
     public int Id { get; set; }

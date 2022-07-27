@@ -18,10 +18,17 @@ public class PizzaController : ControllerBase {
         this.pizzaService = pizzaService;
     }
     
-    [HttpGet]
+        /// <summary>
+    /// Returns all pizzas.
+    /// </summary>
+    [HttpGet(Name = "GetAll")]
     public ActionResult<List<Pizza>> GetAll() => pizzaService.GetAll();
     
-    [HttpGet("{id}")]
+        /// <summary>
+    /// Returns a specific pizza.
+    /// </summary>
+    /// <param name="id"></param>
+    [HttpGet("{id}", Name = "GetPizzaById")]
     public ActionResult<Pizza> Get(int id) 
     {
         var pizza = pizzaService.Get(id);
@@ -70,7 +77,12 @@ public class PizzaController : ControllerBase {
     //     return Ok(pizza);
     // }
     
-    [HttpGet("search")]
+        /// <summary>
+    /// Returns pizzas depending on which pqery parameters you provide.
+    /// </summary>
+    /// <param name="pizzaGetDto"></param>
+
+    [HttpGet("search",Name = "GetPizzaByQuery")]
     public IActionResult GetByQuery ([FromQuery] PizzaGetDto pizzaGetDto)
     {   
         try
@@ -85,19 +97,39 @@ public class PizzaController : ControllerBase {
         }
     }
 
-    [HttpPost]
+        /// <summary>
+    /// Creates a pizza.
+    /// </summary>
+    ///<remarks>
+    /// Sample request:
+    ///
+    ///     POST /Pizza
+    ///     {
+    ///        "name": "Capriciosa",
+    ///        "size" : 2,
+    ///        "price" : 10
+    ///     }
+    ///
+    /// </remarks>
+    [HttpPost(Name = "PostPizza")]
     public IActionResult Create([FromBody] PizzaCreateDto pizzaCreateDto)
     {   
         pizzaService.Add(pizzaCreateDto);
         return Ok(pizzaCreateDto);
     }
     
-    [HttpPatch("{id}")]
-    public IActionResult Update(int Id, [FromBody] PizzaUpdateDto pizzaUpdateDto)
+        /// <summary>
+    /// Updates some fields in a specific pizza.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="pizzaUpdateDto"></param>
+    /// <response code="404">If the id is null</response>
+    [HttpPatch("{id}",Name = "PatchPizza")]
+    public IActionResult Update(int id, [FromBody] PizzaUpdateDto pizzaUpdateDto)
     {   
         try
         {
-            Pizza pizza= pizzaService.Update(Id, pizzaUpdateDto);
+            Pizza pizza= pizzaService.Update(id, pizzaUpdateDto);
             return Ok(pizza);         
         }
         catch (Exception e)
@@ -106,7 +138,13 @@ public class PizzaController : ControllerBase {
         }
     }
     
-    [HttpDelete("{id}")]
+        /// <summary>
+    /// Deletes a specific pizza.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <response code="404">If the id is null</response>
+
+    [HttpDelete("{id}", Name = "DeletePizza")]
     public IActionResult Delete(int id)
     {   
         try

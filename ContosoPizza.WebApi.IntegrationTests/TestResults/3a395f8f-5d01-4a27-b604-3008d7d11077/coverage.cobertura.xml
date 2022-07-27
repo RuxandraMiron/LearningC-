@@ -1,0 +1,1112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.8612000000000001" branch-rate="0.725" version="1.9" timestamp="1658827449" lines-covered="267" lines-valid="310" branches-covered="29" branches-valid="40">
+  <sources>
+    <source>C:\Users\rmirononciul\OneDrive - Riverbed\Desktop\Work\ContosoPizza\ContosoPizza.WebApi\</source>
+  </sources>
+  <packages>
+    <package name="ContosoPizza.WebApi" line-rate="0.8612000000000001" branch-rate="0.725" complexity="93">
+      <classes>
+        <class name="ContosoPizza.WebApi.Program" filename="Program.cs" line-rate="0.9582999999999999" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Main" signature="(System.String[])" line-rate="0.6666" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="9" branch="False" />
+                <line number="8" hits="9" branch="False" />
+                <line number="9" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="CreateWebHostBuilder" signature="(System.String[])" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="9" branch="False" />
+                <line number="13" hits="9" branch="False" />
+                <line number="14" hits="9" branch="False" />
+                <line number="15" hits="9" branch="False" />
+                <line number="16" hits="9" branch="False" />
+                <line number="17" hits="9" branch="False" />
+                <line number="18" hits="9" branch="False" />
+                <line number="19" hits="9" branch="False" />
+                <line number="20" hits="9" branch="False" />
+                <line number="21" hits="9" branch="False" />
+                <line number="22" hits="9" branch="False" />
+                <line number="23" hits="9" branch="False" />
+                <line number="24" hits="9" branch="False" />
+                <line number="25" hits="9" branch="False" />
+                <line number="26" hits="9" branch="False" />
+                <line number="27" hits="9" branch="False" />
+                <line number="28" hits="9" branch="False" />
+                <line number="29" hits="9" branch="False" />
+                <line number="30" hits="18" branch="False" />
+                <line number="32" hits="9" branch="False" />
+                <line number="33" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="9" branch="False" />
+            <line number="8" hits="9" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="12" hits="9" branch="False" />
+            <line number="13" hits="9" branch="False" />
+            <line number="14" hits="9" branch="False" />
+            <line number="15" hits="9" branch="False" />
+            <line number="16" hits="9" branch="False" />
+            <line number="17" hits="9" branch="False" />
+            <line number="18" hits="9" branch="False" />
+            <line number="19" hits="9" branch="False" />
+            <line number="20" hits="9" branch="False" />
+            <line number="21" hits="9" branch="False" />
+            <line number="22" hits="9" branch="False" />
+            <line number="23" hits="9" branch="False" />
+            <line number="24" hits="9" branch="False" />
+            <line number="25" hits="9" branch="False" />
+            <line number="26" hits="9" branch="False" />
+            <line number="27" hits="9" branch="False" />
+            <line number="28" hits="9" branch="False" />
+            <line number="29" hits="9" branch="False" />
+            <line number="30" hits="18" branch="False" />
+            <line number="32" hits="9" branch="False" />
+            <line number="33" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Startup" filename="Startup.cs" line-rate="0.9047" branch-rate="0.5" complexity="5">
+          <methods>
+            <method name="get_Configuration" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="ConfigureServices" signature="(Microsoft.Extensions.DependencyInjection.IServiceCollection)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="9" branch="False" />
+                <line number="20" hits="9" branch="False" />
+                <line number="21" hits="9" branch="False" />
+                <line number="22" hits="18" branch="False" />
+                <line number="23" hits="9" branch="False" />
+                <line number="24" hits="9" branch="False" />
+                <line number="25" hits="9" branch="False" />
+                <line number="26" hits="9" branch="False" />
+                <line number="27" hits="9" branch="False" />
+                <line number="28" hits="9" branch="False" />
+                <line number="29" hits="9" branch="False" />
+                <line number="30" hits="18" branch="False" />
+                <line number="32" hits="9" branch="False" />
+                <line number="33" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="Configure" signature="(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)" line-rate="0.8695" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="36" hits="9" branch="False" />
+                <line number="37" hits="9" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="9" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="38" hits="9" branch="False" />
+                <line number="39" hits="9" branch="False" />
+                <line number="40" hits="9" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="9" branch="False" />
+                <line number="47" hits="9" branch="False" />
+                <line number="49" hits="9" branch="False" />
+                <line number="51" hits="9" branch="False" />
+                <line number="53" hits="9" branch="False" />
+                <line number="55" hits="9" branch="False" />
+                <line number="56" hits="9" branch="False" />
+                <line number="57" hits="9" branch="False" />
+                <line number="58" hits="9" branch="False" />
+                <line number="59" hits="18" branch="False" />
+                <line number="61" hits="18" branch="False" />
+                <line number="62" hits="9" branch="False" />
+                <line number="63" hits="10" branch="False" />
+                <line number="64" hits="18" branch="False" />
+                <line number="66" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="9" branch="False" />
+                <line number="12" hits="9" branch="False" />
+                <line number="13" hits="9" branch="False" />
+                <line number="14" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="False" />
+            <line number="19" hits="9" branch="False" />
+            <line number="20" hits="9" branch="False" />
+            <line number="21" hits="9" branch="False" />
+            <line number="22" hits="18" branch="False" />
+            <line number="23" hits="9" branch="False" />
+            <line number="24" hits="9" branch="False" />
+            <line number="25" hits="9" branch="False" />
+            <line number="26" hits="9" branch="False" />
+            <line number="27" hits="9" branch="False" />
+            <line number="28" hits="9" branch="False" />
+            <line number="29" hits="9" branch="False" />
+            <line number="30" hits="18" branch="False" />
+            <line number="32" hits="9" branch="False" />
+            <line number="33" hits="9" branch="False" />
+            <line number="36" hits="9" branch="False" />
+            <line number="37" hits="9" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="9" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="38" hits="9" branch="False" />
+            <line number="39" hits="9" branch="False" />
+            <line number="40" hits="9" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="9" branch="False" />
+            <line number="47" hits="9" branch="False" />
+            <line number="49" hits="9" branch="False" />
+            <line number="51" hits="9" branch="False" />
+            <line number="53" hits="9" branch="False" />
+            <line number="55" hits="9" branch="False" />
+            <line number="56" hits="9" branch="False" />
+            <line number="57" hits="9" branch="False" />
+            <line number="58" hits="9" branch="False" />
+            <line number="59" hits="18" branch="False" />
+            <line number="61" hits="18" branch="False" />
+            <line number="62" hits="9" branch="False" />
+            <line number="63" hits="10" branch="False" />
+            <line number="64" hits="18" branch="False" />
+            <line number="66" hits="9" branch="False" />
+            <line number="11" hits="9" branch="False" />
+            <line number="12" hits="9" branch="False" />
+            <line number="13" hits="9" branch="False" />
+            <line number="14" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Services.PizzaService" filename="Services\PizzaService.cs" line-rate="0.8851" branch-rate="0.75" complexity="39">
+          <methods>
+            <method name="get_Pizzas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="GetAll" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="75" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="Get" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="77" hits="26" branch="False" />
+              </lines>
+            </method>
+            <method name="GetByQuery" signature="(ContosoPizza.WebApi.DTOs.PizzaGetDto)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="122" hits="2" branch="False" />
+                <line number="123" hits="2" branch="False" />
+                <line number="124" hits="2" branch="False" />
+                <line number="125" hits="1" branch="False" />
+                <line number="127" hits="1" branch="False" />
+                <line number="129" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Filter" signature="(ContosoPizza.WebApi.DTOs.PizzaGetDto)" line-rate="0.6086" branch-rate="0.7" complexity="10">
+              <lines>
+                <line number="132" hits="2" branch="False" />
+                <line number="133" hits="2" branch="False" />
+                <line number="135" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="40" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="136" hits="2" branch="False" />
+                <line number="138" hits="2" branch="False" />
+                <line number="149" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="66" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="150" hits="0" branch="False" />
+                <line number="151" hits="0" branch="False" />
+                <line number="152" hits="0" branch="False" />
+                <line number="154" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="234" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="155" hits="0" branch="False" />
+                <line number="156" hits="0" branch="False" />
+                <line number="157" hits="0" branch="False" />
+                <line number="159" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="409" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="160" hits="0" branch="False" />
+                <line number="161" hits="0" branch="False" />
+                <line number="162" hits="0" branch="False" />
+                <line number="164" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="683" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="165" hits="1" branch="False" />
+                <line number="166" hits="1" branch="False" />
+                <line number="167" hits="1" branch="False" />
+                <line number="169" hits="2" branch="False" />
+                <line number="170" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="Sort" signature="(ContosoPizza.WebApi.DTOs.PizzaGetDto,System.Linq.IQueryable`1&lt;ContosoPizza.WebApi.Models.Pizza&gt;)" line-rate="0.7857" branch-rate="0.75" complexity="8">
+              <lines>
+                <line number="173" hits="2" branch="False" />
+                <line number="174" hits="2" branch="True" condition-coverage="100% (4/4)">
+                  <conditions>
+                    <condition number="15" type="jump" coverage="100%" />
+                    <condition number="31" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="175" hits="1" branch="False" />
+                <line number="176" hits="1" branch="False" />
+                <line number="179" hits="1" branch="False" />
+                <line number="181" hits="1" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="71" type="jump" coverage="50%" />
+                    <condition number="95" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="182" hits="0" branch="False" />
+                <line number="183" hits="0" branch="False" />
+                <line number="184" hits="0" branch="False" />
+                <line number="186" hits="1" branch="False" />
+                <line number="187" hits="1" branch="False" />
+                <line number="188" hits="1" branch="False" />
+                <line number="190" hits="1" branch="False" />
+                <line number="191" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="GetSelectorBy" signature="(System.String)" line-rate="0.5555" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="194" hits="1" branch="False" />
+                <line number="195" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="15" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="196" hits="0" branch="False" />
+                <line number="197" hits="0" branch="False" />
+                <line number="200" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="92" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="201" hits="0" branch="False" />
+                <line number="202" hits="0" branch="False" />
+                <line number="205" hits="1" branch="False" />
+                <line number="206" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Paginate" signature="(ContosoPizza.WebApi.DTOs.PizzaGetDto,System.Linq.IQueryable`1&lt;ContosoPizza.WebApi.Models.Pizza&gt;)" line-rate="1" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="209" hits="1" branch="False" />
+                <line number="210" hits="1" branch="False" />
+                <line number="211" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="30" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="213" hits="1" branch="False" />
+                <line number="215" hits="1" branch="False" />
+                <line number="216" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Add" signature="(ContosoPizza.WebApi.DTOs.PizzaCreateDto)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="219" hits="1" branch="False" />
+                <line number="220" hits="1" branch="False" />
+                <line number="221" hits="1" branch="False" />
+                <line number="222" hits="1" branch="False" />
+                <line number="224" hits="1" branch="False" />
+                <line number="226" hits="1" branch="False" />
+                <line number="227" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Delete" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="230" hits="2" branch="False" />
+                <line number="231" hits="2" branch="False" />
+                <line number="233" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="15" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="234" hits="1" branch="False" />
+                <line number="235" hits="1" branch="False" />
+                <line number="238" hits="1" branch="False" />
+                <line number="239" hits="1" branch="False" />
+                <line number="240" hits="1" branch="False" />
+                <line number="241" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Update" signature="(System.Int32,ContosoPizza.WebApi.DTOs.PizzaUpdateDto)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="244" hits="2" branch="False" />
+                <line number="245" hits="2" branch="False" />
+                <line number="247" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="15" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="248" hits="1" branch="False" />
+                <line number="249" hits="1" branch="False" />
+                <line number="252" hits="1" branch="False" />
+                <line number="253" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="42" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="254" hits="1" branch="False" />
+                <line number="255" hits="1" branch="False" />
+                <line number="256" hits="1" branch="False" />
+                <line number="258" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="76" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="259" hits="1" branch="False" />
+                <line number="260" hits="1" branch="False" />
+                <line number="261" hits="1" branch="False" />
+                <line number="262" hits="1" branch="False" />
+                <line number="263" hits="1" branch="False" />
+                <line number="264" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.Extensions.Logging.ILogger`1&lt;ContosoPizza.WebApi.Services.PizzaService&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="16" branch="False" />
+                <line number="21" hits="8" branch="False" />
+                <line number="23" hits="8" branch="False" />
+                <line number="24" hits="8" branch="False" />
+                <line number="25" hits="8" branch="False" />
+                <line number="26" hits="8" branch="False" />
+                <line number="27" hits="8" branch="False" />
+                <line number="28" hits="8" branch="False" />
+                <line number="29" hits="8" branch="False" />
+                <line number="30" hits="8" branch="False" />
+                <line number="31" hits="8" branch="False" />
+                <line number="32" hits="8" branch="False" />
+                <line number="33" hits="8" branch="False" />
+                <line number="34" hits="8" branch="False" />
+                <line number="35" hits="8" branch="False" />
+                <line number="36" hits="8" branch="False" />
+                <line number="37" hits="8" branch="False" />
+                <line number="38" hits="8" branch="False" />
+                <line number="39" hits="8" branch="False" />
+                <line number="40" hits="8" branch="False" />
+                <line number="41" hits="8" branch="False" />
+                <line number="42" hits="8" branch="False" />
+                <line number="43" hits="8" branch="False" />
+                <line number="44" hits="8" branch="False" />
+                <line number="45" hits="8" branch="False" />
+                <line number="46" hits="8" branch="False" />
+                <line number="47" hits="8" branch="False" />
+                <line number="48" hits="8" branch="False" />
+                <line number="49" hits="8" branch="False" />
+                <line number="50" hits="8" branch="False" />
+                <line number="51" hits="8" branch="False" />
+                <line number="52" hits="8" branch="False" />
+                <line number="53" hits="8" branch="False" />
+                <line number="54" hits="8" branch="False" />
+                <line number="55" hits="8" branch="False" />
+                <line number="56" hits="8" branch="False" />
+                <line number="57" hits="8" branch="False" />
+                <line number="58" hits="8" branch="False" />
+                <line number="59" hits="8" branch="False" />
+                <line number="60" hits="8" branch="False" />
+                <line number="61" hits="8" branch="False" />
+                <line number="62" hits="8" branch="False" />
+                <line number="63" hits="8" branch="False" />
+                <line number="64" hits="8" branch="False" />
+                <line number="65" hits="8" branch="False" />
+                <line number="66" hits="8" branch="False" />
+                <line number="67" hits="8" branch="False" />
+                <line number="68" hits="8" branch="False" />
+                <line number="69" hits="8" branch="False" />
+                <line number="70" hits="8" branch="False" />
+                <line number="71" hits="8" branch="False" />
+                <line number="72" hits="8" branch="False" />
+                <line number="73" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="9" branch="False" />
+            <line number="75" hits="0" branch="False" />
+            <line number="77" hits="26" branch="False" />
+            <line number="122" hits="2" branch="False" />
+            <line number="123" hits="2" branch="False" />
+            <line number="124" hits="2" branch="False" />
+            <line number="125" hits="1" branch="False" />
+            <line number="127" hits="1" branch="False" />
+            <line number="129" hits="1" branch="False" />
+            <line number="132" hits="2" branch="False" />
+            <line number="133" hits="2" branch="False" />
+            <line number="135" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="40" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="136" hits="2" branch="False" />
+            <line number="138" hits="2" branch="False" />
+            <line number="149" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="66" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="150" hits="0" branch="False" />
+            <line number="151" hits="0" branch="False" />
+            <line number="152" hits="0" branch="False" />
+            <line number="154" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="234" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="155" hits="0" branch="False" />
+            <line number="156" hits="0" branch="False" />
+            <line number="157" hits="0" branch="False" />
+            <line number="159" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="409" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="160" hits="0" branch="False" />
+            <line number="161" hits="0" branch="False" />
+            <line number="162" hits="0" branch="False" />
+            <line number="164" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="683" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="165" hits="1" branch="False" />
+            <line number="166" hits="1" branch="False" />
+            <line number="167" hits="1" branch="False" />
+            <line number="169" hits="2" branch="False" />
+            <line number="170" hits="2" branch="False" />
+            <line number="173" hits="2" branch="False" />
+            <line number="174" hits="2" branch="True" condition-coverage="100% (4/4)">
+              <conditions>
+                <condition number="15" type="jump" coverage="100%" />
+                <condition number="31" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="175" hits="1" branch="False" />
+            <line number="176" hits="1" branch="False" />
+            <line number="179" hits="1" branch="False" />
+            <line number="181" hits="1" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="71" type="jump" coverage="50%" />
+                <condition number="95" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="182" hits="0" branch="False" />
+            <line number="183" hits="0" branch="False" />
+            <line number="184" hits="0" branch="False" />
+            <line number="186" hits="1" branch="False" />
+            <line number="187" hits="1" branch="False" />
+            <line number="188" hits="1" branch="False" />
+            <line number="190" hits="1" branch="False" />
+            <line number="191" hits="1" branch="False" />
+            <line number="194" hits="1" branch="False" />
+            <line number="195" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="15" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="196" hits="0" branch="False" />
+            <line number="197" hits="0" branch="False" />
+            <line number="200" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="92" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="201" hits="0" branch="False" />
+            <line number="202" hits="0" branch="False" />
+            <line number="205" hits="1" branch="False" />
+            <line number="206" hits="1" branch="False" />
+            <line number="209" hits="1" branch="False" />
+            <line number="210" hits="1" branch="False" />
+            <line number="211" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="30" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="213" hits="1" branch="False" />
+            <line number="215" hits="1" branch="False" />
+            <line number="216" hits="1" branch="False" />
+            <line number="219" hits="1" branch="False" />
+            <line number="220" hits="1" branch="False" />
+            <line number="221" hits="1" branch="False" />
+            <line number="222" hits="1" branch="False" />
+            <line number="224" hits="1" branch="False" />
+            <line number="226" hits="1" branch="False" />
+            <line number="227" hits="1" branch="False" />
+            <line number="230" hits="2" branch="False" />
+            <line number="231" hits="2" branch="False" />
+            <line number="233" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="15" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="234" hits="1" branch="False" />
+            <line number="235" hits="1" branch="False" />
+            <line number="238" hits="1" branch="False" />
+            <line number="239" hits="1" branch="False" />
+            <line number="240" hits="1" branch="False" />
+            <line number="241" hits="1" branch="False" />
+            <line number="244" hits="2" branch="False" />
+            <line number="245" hits="2" branch="False" />
+            <line number="247" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="15" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="248" hits="1" branch="False" />
+            <line number="249" hits="1" branch="False" />
+            <line number="252" hits="1" branch="False" />
+            <line number="253" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="42" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="254" hits="1" branch="False" />
+            <line number="255" hits="1" branch="False" />
+            <line number="256" hits="1" branch="False" />
+            <line number="258" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="76" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="259" hits="1" branch="False" />
+            <line number="260" hits="1" branch="False" />
+            <line number="261" hits="1" branch="False" />
+            <line number="262" hits="1" branch="False" />
+            <line number="263" hits="1" branch="False" />
+            <line number="264" hits="1" branch="False" />
+            <line number="20" hits="16" branch="False" />
+            <line number="21" hits="8" branch="False" />
+            <line number="23" hits="8" branch="False" />
+            <line number="24" hits="8" branch="False" />
+            <line number="25" hits="8" branch="False" />
+            <line number="26" hits="8" branch="False" />
+            <line number="27" hits="8" branch="False" />
+            <line number="28" hits="8" branch="False" />
+            <line number="29" hits="8" branch="False" />
+            <line number="30" hits="8" branch="False" />
+            <line number="31" hits="8" branch="False" />
+            <line number="32" hits="8" branch="False" />
+            <line number="33" hits="8" branch="False" />
+            <line number="34" hits="8" branch="False" />
+            <line number="35" hits="8" branch="False" />
+            <line number="36" hits="8" branch="False" />
+            <line number="37" hits="8" branch="False" />
+            <line number="38" hits="8" branch="False" />
+            <line number="39" hits="8" branch="False" />
+            <line number="40" hits="8" branch="False" />
+            <line number="41" hits="8" branch="False" />
+            <line number="42" hits="8" branch="False" />
+            <line number="43" hits="8" branch="False" />
+            <line number="44" hits="8" branch="False" />
+            <line number="45" hits="8" branch="False" />
+            <line number="46" hits="8" branch="False" />
+            <line number="47" hits="8" branch="False" />
+            <line number="48" hits="8" branch="False" />
+            <line number="49" hits="8" branch="False" />
+            <line number="50" hits="8" branch="False" />
+            <line number="51" hits="8" branch="False" />
+            <line number="52" hits="8" branch="False" />
+            <line number="53" hits="8" branch="False" />
+            <line number="54" hits="8" branch="False" />
+            <line number="55" hits="8" branch="False" />
+            <line number="56" hits="8" branch="False" />
+            <line number="57" hits="8" branch="False" />
+            <line number="58" hits="8" branch="False" />
+            <line number="59" hits="8" branch="False" />
+            <line number="60" hits="8" branch="False" />
+            <line number="61" hits="8" branch="False" />
+            <line number="62" hits="8" branch="False" />
+            <line number="63" hits="8" branch="False" />
+            <line number="64" hits="8" branch="False" />
+            <line number="65" hits="8" branch="False" />
+            <line number="66" hits="8" branch="False" />
+            <line number="67" hits="8" branch="False" />
+            <line number="68" hits="8" branch="False" />
+            <line number="69" hits="8" branch="False" />
+            <line number="70" hits="8" branch="False" />
+            <line number="71" hits="8" branch="False" />
+            <line number="72" hits="8" branch="False" />
+            <line number="73" hits="8" branch="False" />
+            <line number="16" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Models.Ingredient" filename="Models\Ingredient.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="359" branch="False" />
+              </lines>
+            </method>
+            <method name="get_grams" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="321" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="359" branch="False" />
+            <line number="10" hits="321" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Models.Pizza" filename="Models\Pizza.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="99" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="77" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Size" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="75" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="77" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Ingredients" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="84" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="99" branch="False" />
+            <line number="10" hits="77" branch="False" />
+            <line number="12" hits="75" branch="False" />
+            <line number="16" hits="77" branch="False" />
+            <line number="18" hits="84" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Models.PriceRange" filename="Models\PriceRange.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_MinValue" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MaxValue" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="4" branch="False" />
+            <line number="11" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Models.ProblemDetailsWithErrors" filename="Models\ProblemDetailsWithErrors.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_Type" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TraceId" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Errors" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="1" branch="False" />
+            <line number="6" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Exceptions.InvalidRangeException" filename="Exceptions\InvalidRangeException.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Min" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Max" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+                <line number="7" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Nullable`1&lt;System.Single&gt;,System.Nullable`1&lt;System.Single&gt;)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Exceptions.PizzaIdNotFoundException" filename="Exceptions\PizzaIdNotFoundException.cs" line-rate="0.625" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="False" />
+                <line number="7" hits="0" branch="False" />
+                <line number="8" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="False" />
+                <line number="12" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
+                <line number="14" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="2" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="8" hits="0" branch="False" />
+            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.DTOs.PizzaCreateDto" filename="DTOs\PizzaCreateDto.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Size" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="8" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="10" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Ingredients" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="10" branch="False" />
+            <line number="10" hits="8" branch="False" />
+            <line number="12" hits="10" branch="False" />
+            <line number="14" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.DTOs.PizzaGetDto" filename="DTOs\PizzaGetDto.cs" line-rate="1" branch-rate="1" complexity="8">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PriceRange" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Ingredient" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="44" branch="False" />
+              </lines>
+            </method>
+            <method name="get_IsSortAsc" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SortBy" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PageSize" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_PageIndex" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="5" branch="False" />
+            <line number="14" hits="5" branch="False" />
+            <line number="16" hits="16" branch="False" />
+            <line number="18" hits="44" branch="False" />
+            <line number="20" hits="7" branch="False" />
+            <line number="22" hits="5" branch="False" />
+            <line number="25" hits="4" branch="False" />
+            <line number="28" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.DTOs.PizzaGetDto/&lt;Validate&gt;d__32" filename="DTOs\PizzaGetDto.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="31" hits="3" branch="False" />
+                <line number="32" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="54" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="96" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="40" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="31" hits="3" branch="False" />
+            <line number="32" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="54" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="96" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="40" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.DTOs.PizzaUpdateDto" filename="DTOs\PizzaUpdateDto.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Price" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="4" branch="False" />
+            <line number="7" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="ContosoPizza.WebApi.Controllers.PizzaController" filename="Controllers\PizzaCotroller.cs" line-rate="0.8048000000000001" branch-rate="0" complexity="8">
+          <methods>
+            <method name="GetAll" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="Get" signature="(System.Int32)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="20" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="GetByQuery" signature="(ContosoPizza.WebApi.DTOs.PizzaGetDto)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="94" hits="2" branch="False" />
+                <line number="96" hits="2" branch="False" />
+                <line number="97" hits="2" branch="False" />
+                <line number="98" hits="1" branch="False" />
+                <line number="101" hits="1" branch="False" />
+                <line number="102" hits="1" branch="False" />
+                <line number="103" hits="1" branch="False" />
+                <line number="105" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="Create" signature="(ContosoPizza.WebApi.DTOs.PizzaCreateDto)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="123" hits="1" branch="False" />
+                <line number="124" hits="1" branch="False" />
+                <line number="125" hits="1" branch="False" />
+                <line number="126" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="Update" signature="(System.Int32,ContosoPizza.WebApi.DTOs.PizzaUpdateDto)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="135" hits="2" branch="False" />
+                <line number="137" hits="2" branch="False" />
+                <line number="138" hits="2" branch="False" />
+                <line number="139" hits="1" branch="False" />
+                <line number="141" hits="1" branch="False" />
+                <line number="142" hits="1" branch="False" />
+                <line number="143" hits="1" branch="False" />
+                <line number="145" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="Delete" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="155" hits="2" branch="False" />
+                <line number="157" hits="2" branch="False" />
+                <line number="158" hits="2" branch="False" />
+                <line number="159" hits="1" branch="False" />
+                <line number="160" hits="1" branch="False" />
+                <line number="161" hits="1" branch="False" />
+                <line number="162" hits="1" branch="False" />
+                <line number="165" hits="1" branch="False" />
+                <line number="166" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(ContosoPizza.WebApi.Interfaces.IPizzaService)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="8" branch="False" />
+                <line number="17" hits="8" branch="False" />
+                <line number="18" hits="8" branch="False" />
+                <line number="19" hits="8" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="20" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="94" hits="2" branch="False" />
+            <line number="96" hits="2" branch="False" />
+            <line number="97" hits="2" branch="False" />
+            <line number="98" hits="1" branch="False" />
+            <line number="101" hits="1" branch="False" />
+            <line number="102" hits="1" branch="False" />
+            <line number="103" hits="1" branch="False" />
+            <line number="105" hits="2" branch="False" />
+            <line number="123" hits="1" branch="False" />
+            <line number="124" hits="1" branch="False" />
+            <line number="125" hits="1" branch="False" />
+            <line number="126" hits="1" branch="False" />
+            <line number="135" hits="2" branch="False" />
+            <line number="137" hits="2" branch="False" />
+            <line number="138" hits="2" branch="False" />
+            <line number="139" hits="1" branch="False" />
+            <line number="141" hits="1" branch="False" />
+            <line number="142" hits="1" branch="False" />
+            <line number="143" hits="1" branch="False" />
+            <line number="145" hits="2" branch="False" />
+            <line number="155" hits="2" branch="False" />
+            <line number="157" hits="2" branch="False" />
+            <line number="158" hits="2" branch="False" />
+            <line number="159" hits="1" branch="False" />
+            <line number="160" hits="1" branch="False" />
+            <line number="161" hits="1" branch="False" />
+            <line number="162" hits="1" branch="False" />
+            <line number="165" hits="1" branch="False" />
+            <line number="166" hits="2" branch="False" />
+            <line number="16" hits="8" branch="False" />
+            <line number="17" hits="8" branch="False" />
+            <line number="18" hits="8" branch="False" />
+            <line number="19" hits="8" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

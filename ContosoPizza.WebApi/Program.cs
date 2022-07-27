@@ -26,10 +26,7 @@ namespace ContosoPizza.WebApi;
                 {   
                     logging.ClearProviders();
                     logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
-                    logging.AddConsole(consoleOptions => 
-                    {
-                        consoleOptions.IncludeScopes = true;
-                    });
+                    logging.AddConsole();
                 });
                 
             return hostBuilder;

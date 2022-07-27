@@ -1,0 +1,476 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "ContosoPizza Learning Project",
+      "description": "An ASP.NET Core Web API for managing pizzas",
+      "version": ""
+    },
+    "paths": {
+      "/": {
+        "get": {
+          "tags": [
+            "ContosoPizza.WebApi"
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/Pizza": {
+        "get": {
+          "tags": [
+            "Pizza"
+          ],
+          "summary": "Returns all pizzas.",
+          "operationId": "GetAll",
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Pizza"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Pizza"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Pizza"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "Pizza"
+          ],
+          "summary": "Creates a pizza.",
+          "description": "Sample request:\r\n            \r\n    POST /Pizza\r\n    {\r\n       \"name\": \"Capriciosa\",\r\n       \"size\" : 2,\r\n       \"price\" : 10\r\n    }",
+          "operationId": "PostPizza",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PizzaCreateDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PizzaCreateDto"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PizzaCreateDto"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/Pizza/{id}": {
+        "get": {
+          "tags": [
+            "Pizza"
+          ],
+          "summary": "Returns a specific pizza.",
+          "operationId": "GetPizzaById",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "",
+              "required": true,
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pizza"
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pizza"
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pizza"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "patch": {
+          "tags": [
+            "Pizza"
+          ],
+          "summary": "Updates some fields in a specific pizza.",
+          "operationId": "PatchPizza",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "",
+              "required": true,
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "requestBody": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PizzaUpdateDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PizzaUpdateDto"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PizzaUpdateDto"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
+            },
+            "404": {
+              "description": "If the id is null"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "Pizza"
+          ],
+          "summary": "Deletes a specific pizza.",
+          "operationId": "DeletePizza",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "",
+              "required": true,
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            },
+            "404": {
+              "description": "If the id is null"
+            }
+          }
+        }
+      },
+      "/Pizza/search": {
+        "get": {
+          "tags": [
+            "Pizza"
+          ],
+          "summary": "Returns pizzas depending on which pqery parameters you provide.",
+          "operationId": "GetPizzaByQuery",
+          "parameters": [
+            {
+              "name": "Id",
+              "in": "query",
+              "schema": {
+                "maximum": 2147483647,
+                "minimum": 1,
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            {
+              "name": "Name",
+              "in": "query",
+              "schema": {
+                "minLength": 2,
+                "type": "string"
+              }
+            },
+            {
+              "name": "PriceRange.MinValue",
+              "in": "query",
+              "schema": {
+                "maximum": 2147483647,
+                "minimum": 0,
+                "type": "number",
+                "format": "float"
+              }
+            },
+            {
+              "name": "PriceRange.MaxValue",
+              "in": "query",
+              "schema": {
+                "maximum": 2147483647,
+                "minimum": 0,
+                "type": "number",
+                "format": "float"
+              }
+            },
+            {
+              "name": "Ingredient",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "IsSortAsc",
+              "in": "query",
+              "schema": {
+                "type": "boolean"
+              }
+            },
+            {
+              "name": "SortBy",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "PageSize",
+              "in": "query",
+              "schema": {
+                "maximum": 1000,
+                "minimum": 1,
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            {
+              "name": "PageIndex",
+              "in": "query",
+              "schema": {
+                "maximum": 2147483647,
+                "minimum": 0,
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/WeatherForecast": {
+        "get": {
+          "tags": [
+            "WeatherForecast"
+          ],
+          "operationId": "GetWeatherForecast",
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "text/plain": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/WeatherForecast"
+                    }
+                  }
+                },
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/WeatherForecast"
+                    }
+                  }
+                },
+                "text/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/WeatherForecast"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Ingredient": {
+          "required": [
+            "name"
+          ],
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "grams": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          "additionalProperties": false
+        },
+        "Pizza": {
+          "required": [
+            "ingredients",
+            "name"
+          ],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "name": {
+              "maxLength": 50,
+              "minLength": 0,
+              "type": "string"
+            },
+            "size": {
+              "$ref": "#/components/schemas/Size"
+            },
+            "price": {
+              "type": "number",
+              "format": "float"
+            },
+            "ingredients": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Ingredient"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "PizzaCreateDto": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "nullable": true
+            },
+            "size": {
+              "$ref": "#/components/schemas/Size"
+            },
+            "price": {
+              "type": "number",
+              "format": "float"
+            },
+            "ingredients": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Ingredient"
+              },
+              "nullable": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "PizzaUpdateDto": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "nullable": true
+            },
+            "price": {
+              "type": "number",
+              "format": "float",
+              "nullable": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "Size": {
+          "enum": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "type": "integer",
+          "format": "int32"
+        },
+        "WeatherForecast": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "temperatureC": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "temperatureF": {
+              "type": "integer",
+              "format": "int32",
+              "readOnly": true
+            },
+            "summary": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }

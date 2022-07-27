@@ -1,5 +1,6 @@
 namespace ContosoPizza;
-
+using System.Diagnostics.CodeAnalysis;
+[ExcludeFromCodeCoverage]
 public class WeatherForecast
 {
     public DateTime Date { get; set; }
