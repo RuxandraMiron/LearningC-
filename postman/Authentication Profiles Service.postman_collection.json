@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "2e9acc69-fb89-462e-9a07-517d06cda486",
+		"name": "Authentication Profiles Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21632269"
+	},
+	"item": [
+		{
+			"name": "Add profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"MarsWithVerifyingData-2022-10-04-v2\",\n    \"description\": \"Profile needed to land on Mars profile\",\n    \"isEnabled\": true,\n    \"authenticationMethod\": \"BasicAuthentication\",\n    \"sensitiveData\": {\n        \"username\": \"mars-user\",\n        \"password\": \"mars-password\"\n    },\n    \"isVerified\": null,\n    \"verifyUrl\": \"https://catfact.ninja/breeds?limit=7\",\n    \"verifyHttpMethod\": \"POST\",\n    \"verifyRequestHeaders\": {\n        \"X-Custom-Header1\": \"value1\",\n        \"X-Custom-Header2\": \"value2\",\n        \"X-Custom-Header3\": \"value3\",\n        \"X-Custom-Header4\": \"value4\"\n    },\n    \"verifyRequestBody\": \"{\\\"data\\\": \\\"hard-coded-data\\\"}\",\n    \"lastVerifiedOn\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add profile: Twitter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Twitter2\",\n    \"description\": null,\n    \"isEnabled\": false,\n    \"authenticationMethod\": \"BasicAuthentication\",\n    \"sensitiveData\": {\n        \"username\": \"twitter_username\",\n        \"password\": \"twitter_password\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "W/\"datetime'2022-09-26T07%3A28%3A23.921182Z'\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mars\",\n    \"description\": \"Profile v3\",\n    \"isEnabled\": true,\n    \"isVerified\": null,\n    \"verifyUrl\": \"https://catfact.ninja/breeds?limit=7\",\n    \"verifyHttpMethod\": \"GET\",\n    \"verifyRequestHeaders\": null,\n    \"verifyRequestBody\": null,\n    \"lastVerifiedOn\": null,\n    \"authenticationMethod\": \"BasicAuthentication\",\n    \"sensitiveData\": {\n        \"username\": \"mars--2022-09-26-v1\",\n        \"password\": \"lands!--2022-09-26-v1\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles/{{AuthenticationProfileId}}",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles",
+						"{{AuthenticationProfileId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update profile: Twitter",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "W/\"datetime'2022-08-19T07%3A23%3A33.040916Z'\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mars\",\n    \"description\": \"Twitter authentication profile - v1\",\n    \"isEnabled\": true,\n    \"authenticationMethod\": \"BasicAuthentication\",\n    \"sensitiveData\": {\n        \"username\": \"twitter_username\",\n        \"password\": \"twitter_password\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles/{{AuthenticationProfileId}}",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles",
+						"{{AuthenticationProfileId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Toggle enabled state of current profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "W/\"datetime'2022-09-05T14%3A48%3A02.522844Z'\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Twitter\",\n    \"description\": \"Twitter authentication profile - v1\",\n    \"authenticationMethodType\": \"BasicAuthentication\",\n    \"sensitiveData\": {\n        \"username\": \"twitter_username\",\n        \"password\": \"twitter_password\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles/{{AuthenticationProfileId}}/toggleEnabledState",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles",
+						"{{AuthenticationProfileId}}",
+						"toggleEnabledState"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update non-existing profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "W/\"datetime'2022-08-19T07%3A23%3A33.040916Z'\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Non-existent profile\",\n    \"description\": null,\n    \"authenticationMethod\": \"BasicAuthentication\",\n    \"sensitiveData\": {\n        \"username\": \"username\",\n        \"password\": \"password\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles/1234567890",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles",
+						"1234567890"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch authentication profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles/{{AuthenticationProfileId}}",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles",
+						"{{AuthenticationProfileId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch authentication profiles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove authentication profile",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "If-Match",
+						"value": "W/\"datetime'2022-09-21T13%3A39%3A07.363588Z'\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles/{{AuthenticationProfileId}}",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles",
+						"{{AuthenticationProfileId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify authentication profile details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"authenticationMethod\": \"BasicAuthentication\",\n    \"sensitiveData\": {\n        \"username\": \"slack_username\",\n        \"password\": \"slack_password\"\n    },\n    \"verifyUrl\": \"https://catfact.ninja/breeds?limit=7\",\n    \"verifyHttpMethod\": \"POST\",\n    \"verifyRequestHeaders\": {\n        \"X-Custom-Header1\": \"value1\",\n        \"X-Custom-Header2\": \"value2\"\n    },\n    \"verifyRequestBody\": \"{\\\"data\\\": \\\"hard-coded-data\\\"}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BackendBaseUrl}}/api/authenticationProfiles/tenants/{{TenantId}}/profiles/verifyDetails",
+					"host": [
+						"{{BackendBaseUrl}}"
+					],
+					"path": [
+						"api",
+						"authenticationProfiles",
+						"tenants",
+						"{{TenantId}}",
+						"profiles",
+						"verifyDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{BearerToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
